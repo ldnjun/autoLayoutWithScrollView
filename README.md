@@ -1,1 +1,2 @@
 # autoLayoutWithScrollView
+demo里面讲解了scrollview在autolayout下的约束。
