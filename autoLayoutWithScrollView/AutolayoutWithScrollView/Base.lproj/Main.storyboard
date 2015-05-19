@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbO-yr-C3k">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPe-pK-aOz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUw-zF-scr">
+                                                <rect key="frame" x="50" y="61" width="46" height="30"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cW8-oT-CoQ">
+                                                <rect key="frame" x="0.0" y="8" width="240" height="18"/>
+                                                <color key="backgroundColor" red="0.2823529541" green="0.52156865600000002" blue="0.70980393890000004" alpha="1" colorSpace="deviceRGB"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-cG-oJP">
+                                                <rect key="frame" x="130" y="496" width="60" height="30"/>
+                                                <state key="normal" title="退出登录">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="SUw-zF-scr" firstAttribute="top" secondItem="wPe-pK-aOz" secondAttribute="top" constant="61" id="URt-0b-s2o"/>
+                                            <constraint firstAttribute="centerX" secondItem="Vdz-cG-oJP" secondAttribute="centerX" id="XUX-9m-hrK"/>
+                                            <constraint firstAttribute="height" constant="568" id="hWL-RR-Ldj"/>
+                                            <constraint firstItem="SUw-zF-scr" firstAttribute="leading" secondItem="wPe-pK-aOz" secondAttribute="leading" constant="50" id="huf-U5-UWA"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vdz-cG-oJP" secondAttribute="bottom" constant="42" id="lee-YF-Z2E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wPe-pK-aOz" secondAttribute="trailing" id="4uI-NR-Wxh"/>
+                                    <constraint firstAttribute="bottom" secondItem="wPe-pK-aOz" secondAttribute="bottom" id="Bvd-7F-L9C"/>
+                                    <constraint firstItem="wPe-pK-aOz" firstAttribute="top" secondItem="CbO-yr-C3k" secondAttribute="top" id="Nvq-2O-eXS"/>
+                                    <constraint firstItem="wPe-pK-aOz" firstAttribute="leading" secondItem="CbO-yr-C3k" secondAttribute="leading" id="eqq-fB-weY"/>
+                                    <constraint firstItem="wPe-pK-aOz" firstAttribute="width" secondItem="CbO-yr-C3k" secondAttribute="width" id="hMS-9J-hRh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CbO-yr-C3k" secondAttribute="trailing" id="7OC-Ut-ymI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CbO-yr-C3k" secondAttribute="bottom" id="BTU-Wi-N21"/>
+                            <constraint firstItem="CbO-yr-C3k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="GsP-fK-pGQ"/>
+                            <constraint firstItem="CbO-yr-C3k" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="g7N-Ju-sje"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
